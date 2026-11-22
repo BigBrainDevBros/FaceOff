@@ -27,7 +27,7 @@ jobs:
 
       - name: Validate JavaScript Syntax
         run: |
-          for file in js/*.js; do
+          for file in js/*.js assets/*.js; do
             [ -f "$file" ] || continue
             node --check "$file"
             echo "Validated syntax: $file"
