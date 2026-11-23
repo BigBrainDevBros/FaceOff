@@ -20,6 +20,18 @@
 
 ---
 
+## Star History
+
+<a href="https://www.star-history.com/?type=date&repos=amfi-disable%2Fdustiii">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=amfi-disable%2Fdustiii&type=date&theme=dark&legend=top-left" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=amfi-disable%2Fdustiii&type=date&legend=top-left" />
+    <img alt="AMFI-Disable/DustIII Star History Chart" src="https://api.star-history.com/chart?repos=amfi-disable%2Fdustiii&type=date&legend=top-left" />
+  </picture>
+</a>
+
+---
+
 ## Select Language / 选择语言 / 言語を選択 / Idioma / Langue / Sprache
 
 **[English](readme.md)** •
@@ -227,15 +239,3 @@ There is no automated unit test suite in this repository. Contributions that add
 ## License And Terms
 
 Licensed under the [MIT License](license). Copyright (c) 2026 AMFI-Disable.
-
----
-
-## Star History
-
-<a href="https://www.star-history.com/#AMFI-Disable/DustIII&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=AMFI-Disable/DustIII&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=AMFI-Disable/DustIII&type=Date" />
-    <img alt="AMFI-Disable/DustIII Star History Chart" src="https://api.star-history.com/svg?repos=AMFI-Disable/DustIII&type=Date" />
-  </picture>
-</a>
