@@ -21,6 +21,7 @@ The format follows Keep a Changelog, and this project uses Semantic Versioning.
 
 ### Changed
 
+- Extracted the `DecompressionStream` single-file unpacker from `index.html` into `assets/boot.js` with CSP violation diagnostics, `blob:` module fallback loading, and updated bundle payloads (`assets/pack-00.js`, `assets/pack-01.js`, `assets/pack-02.js`).
 - Lowercased marker texture assets to `mark_a.png` and `mark_b.png`, and updated the `js/world.js` references.
 - Modernized GitHub Pages deployment workflow actions to standard versions (`actions/checkout@v6`, `actions/configure-pages@v6`, `actions/upload-pages-artifact@v5`, `actions/deploy-pages@v5`).
 - Replaced the unbundled `js/*.js` ES module files and loose `assets/` subdirectories (`chars/`, `fx/`, `tex/`, `ui/weapons/`, `weapons/`, `world/`) with the packed `FACEOFF` game bundle and `index.html` loader.
