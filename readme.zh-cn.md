@@ -1,6 +1,6 @@
 <div align="center">
 
-# DustIII
+# FaceOff
 
 **Dust II 爆破模式 — 浏览器中的 5v5 拆弹对决**  
 *基于 Three.js 打造、忠于 CS2 的规则体系：真实经济、购买菜单、弹道压枪、穿墙、道具、炸弹点位，以及四档难度的机器人对手——纯静态站点，零后端。*
@@ -9,7 +9,7 @@
 [![引擎: Three.js 0.170](https://img.shields.io/badge/引擎-Three.js%200.170-black.svg?style=flat-square)](https://threejs.org)
 [![规则: CS2 竞技](https://img.shields.io/badge/规则-CS2%20竞技-orange.svg?style=flat-square)](#rules)
 [![状态: 可游玩](https://img.shields.io/badge/状态-可游玩-success.svg?style=flat-square)](#overview)
-[![试玩: 在线演示](https://img.shields.io/badge/试玩-在线演示-success.svg?style=flat-square&logo=githubpages)](https://amfi-disable.github.io/DustIII/)
+[![试玩: 在线演示](https://img.shields.io/badge/试玩-在线演示-success.svg?style=flat-square&logo=githubpages)](https://bigbraindevbros.github.io/FaceOff/)
 [![开源协议: MIT](https://img.shields.io/badge/开源协议-MIT-blue.svg?style=flat-square)](license)
 [![价格: 100% 免费开源](https://img.shields.io/badge/价格-100%25%20免费开源-success.svg?style=flat-square)](#overview)
 [![隐私: 零遥测 / 100% 本地](https://img.shields.io/badge/隐私-零遥测%20%2F%20100%25%20本地-purple.svg?style=flat-square)](#privacy)
@@ -46,7 +46,7 @@
 
 ## 概述与核心价值 <a id="overview"></a>
 
-DustIII 是在浏览器中原生复刻经典 de_dust2 5v5 拆弹循环的项目。你手持步枪，四名机器人队友与你一同架点，五名敌方机器人会像一支协同作战的队伍那样购买、转点、执行战术与回防。每一回合都在单个页面中本地模拟——没有账号、没有匹配服务、无需下载、没有遥测。
+FaceOff 是在浏览器中原生复刻经典 de_dust2 5v5 拆弹循环的项目。你手持步枪，四名机器人队友与你一同架点，五名敌方机器人会像一支协同作战的队伍那样购买、转点、执行战术与回防。每一回合都在单个页面中本地模拟——没有账号、没有匹配服务、无需下载、没有遥测。
 
 项目面向桌面版 Chrome、Firefox 与 Safari，需要 WebGL 2。冷启动会从同源加载静态地图与美术资源包，随后在现代 GPU 上以 60+ FPS 运行整场比赛。
 
@@ -133,8 +133,8 @@ DustIII 是在浏览器中原生复刻经典 de_dust2 5v5 拆弹循环的项目�
 ### 本地运行游戏
 
 ```bash
-git clone https://github.com/AMFI-Disable/DustIII.git
-cd DustIII
+git clone https://github.com/BigBrainDevBros/FaceOff.git
+cd FaceOff
 python3 -m http.server 8000
 ```
 
@@ -154,7 +154,7 @@ python3 -m http.server 8000
 游戏是一个无需构建步骤的扁平 ES 模块应用。`index.html` 负责 DOM 外壳、HUD 样式与导入映射；`js/` 负责模拟与呈现。
 
 ```text
-DustIII/
+FaceOff/
 ├── index.html                  # 外壳、HUD 样式、加载界面、导入映射
 ├── js/
 │   ├── main.js                 # 启动、输入、相机、渲染循环、观战

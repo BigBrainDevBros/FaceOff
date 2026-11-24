@@ -1,6 +1,6 @@
 <div align="center">
 
-# DustIII
+# FaceOff
 
 **Dust II Defusal — 5v5 Bombenentschärfung Im Browser**  
 *Ein CS2-treues Regelset auf Basis von Three.js: echte Wirtschaft, Kaufmenü, Rückstoßmuster, Wanddurchschlag, Utility, Bombenstellen und vier Bot-Stufen — als statische Seite ohne Backend.*
@@ -9,7 +9,7 @@
 [![Engine: Three.js 0.170](https://img.shields.io/badge/Engine-Three.js%200.170-black.svg?style=flat-square)](https://threejs.org)
 [![Regeln: CS2 Kompetitiv](https://img.shields.io/badge/Regeln-CS2%20Kompetitiv-orange.svg?style=flat-square)](#rules)
 [![Status: Spielbar](https://img.shields.io/badge/Status-Spielbar-success.svg?style=flat-square)](#overview)
-[![Spielen: Live-Demo](https://img.shields.io/badge/Spielen-Live--Demo-success.svg?style=flat-square&logo=githubpages)](https://amfi-disable.github.io/DustIII/)
+[![Spielen: Live-Demo](https://img.shields.io/badge/Spielen-Live--Demo-success.svg?style=flat-square&logo=githubpages)](https://bigbraindevbros.github.io/FaceOff/)
 [![Lizenz: MIT](https://img.shields.io/badge/Lizenz-MIT-blue.svg?style=flat-square)](license)
 [![Preis: 100% Kostenlos & Open Source](https://img.shields.io/badge/Preis-100%25%20Kostenlos%20%26%20Open%20Source-success.svg?style=flat-square)](#overview)
 [![Datenschutz: Keine Telemetrie / 100% Lokal](https://img.shields.io/badge/Datenschutz-Keine%20Telemetrie%20%2F%20100%25%20Lokal-purple.svg?style=flat-square)](#privacy)
@@ -46,7 +46,7 @@
 
 ## Überblick Und Kernwert <a id="overview"></a>
 
-DustIII ist eine browser-native Nachbildung des klassischen 5v5-Bombenentschärfungszyklus auf de_dust2. Du hältst ein Gewehr, vier Bot-Teamkollegen sichern mit dir Winkel ab, und fünf gegnerische Bots kaufen, rotieren, führen aus und nehmen Positionen zurück wie ein koordiniertes Team. Jede Runde wird lokal in einer einzigen Seite simuliert — kein Konto, kein Matchmaking-Dienst, kein Download und keine Telemetrie.
+FaceOff ist eine browser-native Nachbildung des klassischen 5v5-Bombenentschärfungszyklus auf de_dust2. Du hältst ein Gewehr, vier Bot-Teamkollegen sichern mit dir Winkel ab, und fünf gegnerische Bots kaufen, rotieren, führen aus und nehmen Positionen zurück wie ein koordiniertes Team. Jede Runde wird lokal in einer einzigen Seite simuliert — kein Konto, kein Matchmaking-Dienst, kein Download und keine Telemetrie.
 
 Das Projekt richtet sich an Desktop-Chrome, Firefox und Safari mit WebGL 2. Ein Kaltstart lädt die statische Karte und das Art-Paket von derselben Origin und führt dann das gesamte Match mit über 60 FPS auf einer modernen GPU aus.
 
@@ -133,8 +133,8 @@ Das Projekt richtet sich an Desktop-Chrome, Firefox und Safari mit WebGL 2. Ein 
 ### Spiel Lokal Starten
 
 ```bash
-git clone https://github.com/AMFI-Disable/DustIII.git
-cd DustIII
+git clone https://github.com/BigBrainDevBros/FaceOff.git
+cd FaceOff
 python3 -m http.server 8000
 ```
 
@@ -154,7 +154,7 @@ Da das Paket vollständig statisch ist, funktioniert jedes Static-Hosting: GitHu
 Das Spiel ist eine flache ES-Modul-Anwendung ohne Build-Schritt. `index.html` besitzt die DOM-Hülle, die HUD-Stile und die Import-Map; `js/` besitzt Simulation und Darstellung.
 
 ```text
-DustIII/
+FaceOff/
 ├── index.html                  # Hülle, HUD-Stile, Ladebildschirm, Import-Map
 ├── js/
 │   ├── main.js                 # Start, Eingabe, Kamera, Rendering-Schleife, Zuschauen
@@ -224,4 +224,4 @@ Dieses Repository enthält keine automatisierte Unit-Test-Suite. Beiträge, die 
 
 ## Lizenz Und Bedingungen <a id="license"></a>
 
-Veröffentlicht unter der [MIT-Lizenz](license). Copyright (c) 2026 AMFI-Disable.
+Veröffentlicht unter der [MIT-Lizenz](license). Copyright (c) 2026 BigBrainDevBros.

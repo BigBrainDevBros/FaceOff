@@ -1,6 +1,6 @@
 <div align="center">
 
-# DustIII
+# FaceOff
 
 **Dust II 爆破模式 — 瀏覽器中的 5v5 拆彈對決**  
 *以 Three.js 打造、忠於 CS2 的規則體系：真實經濟、購買選單、彈道壓槍、穿牆、道具、炸彈點位，以及四種難度的機器人對手——純靜態網站，零後端。*
@@ -9,7 +9,7 @@
 [![引擎: Three.js 0.170](https://img.shields.io/badge/引擎-Three.js%200.170-black.svg?style=flat-square)](https://threejs.org)
 [![規則: CS2 競技](https://img.shields.io/badge/規則-CS2%20競技-orange.svg?style=flat-square)](#rules)
 [![狀態: 可遊玩](https://img.shields.io/badge/狀態-可遊玩-success.svg?style=flat-square)](#overview)
-[![試玩: 線上展示](https://img.shields.io/badge/試玩-線上展示-success.svg?style=flat-square&logo=githubpages)](https://amfi-disable.github.io/DustIII/)
+[![試玩: 線上展示](https://img.shields.io/badge/試玩-線上展示-success.svg?style=flat-square&logo=githubpages)](https://bigbraindevbros.github.io/FaceOff/)
 [![開源授權: MIT](https://img.shields.io/badge/開源授權-MIT-blue.svg?style=flat-square)](license)
 [![價格: 100% 免費開源](https://img.shields.io/badge/價格-100%25%20免費開源-success.svg?style=flat-square)](#overview)
 [![隱私: 零遙測 / 100% 本地](https://img.shields.io/badge/隱私-零遙測%20%2F%20100%25%20本地-purple.svg?style=flat-square)](#privacy)
@@ -46,7 +46,7 @@
 
 ## 概述與核心價值 <a id="overview"></a>
 
-DustIII 是在瀏覽器中原生重現經典 de_dust2 5v5 拆彈循環的專案。你手持步槍，四名機器人隊友與你一同架點，五名敵方機器人會像一支協同作戰的隊伍那樣購買、轉點、執行戰術與回防。每一回合都在單一頁面中本地模擬——沒有帳號、沒有配對服務、無需下載、沒有遙測。
+FaceOff 是在瀏覽器中原生重現經典 de_dust2 5v5 拆彈循環的專案。你手持步槍，四名機器人隊友與你一同架點，五名敵方機器人會像一支協同作戰的隊伍那樣購買、轉點、執行戰術與回防。每一回合都在單一頁面中本地模擬——沒有帳號、沒有配對服務、無需下載、沒有遙測。
 
 專案面向桌面版 Chrome、Firefox 與 Safari，需要 WebGL 2。冷啟動會從同源載入靜態地圖與美術資源包，隨後在現代 GPU 上以 60+ FPS 執行整場比賽。
 
@@ -133,8 +133,8 @@ DustIII 是在瀏覽器中原生重現經典 de_dust2 5v5 拆彈循環的專案�
 ### 本地執行遊戲
 
 ```bash
-git clone https://github.com/AMFI-Disable/DustIII.git
-cd DustIII
+git clone https://github.com/BigBrainDevBros/FaceOff.git
+cd FaceOff
 python3 -m http.server 8000
 ```
 
@@ -154,7 +154,7 @@ python3 -m http.server 8000
 遊戲是一個無需建置步驟的扁平 ES 模組應用程式。`index.html` 負責 DOM 外殼、HUD 樣式與匯入對應；`js/` 負責模擬與呈現。
 
 ```text
-DustIII/
+FaceOff/
 ├── index.html                  # 外殼、HUD 樣式、載入介面、匯入對應
 ├── js/
 │   ├── main.js                 # 啟動、輸入、相機、渲染迴圈、觀戰

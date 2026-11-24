@@ -1,6 +1,6 @@
 <div align="center">
 
-# DustIII
+# FaceOff
 
 **Dust II Defusal — 5v5 Bomb Defusal In Your Browser**  
 *A faithful CS2-style ruleset built with Three.js: real economy, buy menu, spray patterns, wallbangs, utility, bomb sites, and four tiers of bot opponents — served as a static site with zero backend.*
@@ -9,12 +9,12 @@
 [![Engine: Three.js](https://img.shields.io/badge/Engine-Three.js%200.170-black.svg?style=flat-square)](https://threejs.org)
 [![Rules: CS2 Competitive](https://img.shields.io/badge/Rules-CS2%20Competitive-orange.svg?style=flat-square)](#competitive-rules-and-economy)
 [![Status: Playable](https://img.shields.io/badge/Status-Playable-success.svg?style=flat-square)](#overview-and-core-value)
-[![Play: Live Demo](https://img.shields.io/badge/Play-Live%20Demo-success.svg?style=flat-square&logo=githubpages)](https://amfi-disable.github.io/DustIII/)
+[![Play: Live Demo](https://img.shields.io/badge/Play-Live%20Demo-success.svg?style=flat-square&logo=githubpages)](https://bigbraindevbros.github.io/FaceOff/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](license)
 [![Pricing: Free & Open-Source](https://img.shields.io/badge/Pricing-100%25%20Free%20%26%20Open%20Source-success.svg?style=flat-square)](#overview-and-core-value)
 [![Privacy: Zero Telemetry](https://img.shields.io/badge/Privacy-Zero%20Telemetry%20%2F%20100%25%20Local-purple.svg?style=flat-square)](#privacy-and-security-first)
 
-[Play Online](https://amfi-disable.github.io/DustIII/) · [Changelog](changelog.md) · [Security Policy](security.md) · [MIT License](license)
+[Play Online](https://bigbraindevbros.github.io/FaceOff/) · [Changelog](changelog.md) · [Security Policy](security.md) · [MIT License](license)
 
 </div>
 
@@ -22,11 +22,11 @@
 
 ## Star History
 
-<a href="https://www.star-history.com/?type=date&repos=amfi-disable%2Fdustiii">
+<a href="https://www.star-history.com/?type=date&repos=bigbraindevbros%2Ffaceoff">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=amfi-disable%2Fdustiii&type=date&theme=dark&legend=top-left" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=amfi-disable%2Fdustiii&type=date&legend=top-left" />
-    <img alt="AMFI-Disable/DustIII Star History Chart" src="https://api.star-history.com/chart?repos=amfi-disable%2Fdustiii&type=date&legend=top-left" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=bigbraindevbros%2Ffaceoff&type=date&theme=dark&legend=top-left" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=bigbraindevbros%2Ffaceoff&type=date&legend=top-left" />
+    <img alt="BigBrainDevBros/FaceOff Star History Chart" src="https://api.star-history.com/chart?repos=bigbraindevbros%2Ffaceoff&type=date&legend=top-left" />
   </picture>
 </a>
 
@@ -60,7 +60,7 @@
 
 ## Overview And Core Value
 
-DustIII is a browser-native recreation of the classic 5v5 bomb-defusal loop on de_dust2. You hold a rifle, four bot teammates hold angles with you, and five enemy bots buy, rotate, execute, and retake like a coordinated team. Every round is simulated locally in a single page — there is no account, no matchmaking service, no download, and no telemetry.
+FaceOff is a browser-native recreation of the classic 5v5 bomb-defusal loop on de_dust2. You hold a rifle, four bot teammates hold angles with you, and five enemy bots buy, rotate, execute, and retake like a coordinated team. Every round is simulated locally in a single page — there is no account, no matchmaking service, no download, and no telemetry.
 
 The project targets desktop Chrome, Firefox, and Safari with WebGL 2. A cold load streams the static map and art bundle from the same origin, then runs the entire match at 60+ FPS on a modern GPU.
 
@@ -147,8 +147,8 @@ The project targets desktop Chrome, Firefox, and Safari with WebGL 2. A cold loa
 ### Serve The Game Locally
 
 ```bash
-git clone https://github.com/AMFI-Disable/DustIII.git
-cd DustIII
+git clone https://github.com/BigBrainDevBros/FaceOff.git
+cd FaceOff
 python3 -m http.server 8000
 ```
 
@@ -168,7 +168,7 @@ Because the build is a plain static bundle, any static host works: GitHub Pages,
 The game is a flat ES module application with no build step. `index.html` owns the DOM shell, HUD styles, and the import map; `js/` owns simulation and presentation.
 
 ```text
-DustIII/
+FaceOff/
 ├── index.html                  # Shell, HUD styles, loading screen, import map
 ├── js/
 │   ├── main.js                 # Boot, input, camera, render loop, spectating
@@ -238,4 +238,4 @@ There is no automated unit test suite in this repository. Contributions that add
 
 ## License And Terms
 
-Licensed under the [MIT License](license). Copyright (c) 2026 AMFI-Disable.
+Licensed under the [MIT License](license). Copyright (c) 2026 BigBrainDevBros.

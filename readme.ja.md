@@ -1,6 +1,6 @@
 <div align="center">
 
-# DustIII
+# FaceOff
 
 **Dust II 爆破モード — ブラウザで遊ぶ 5v5 ボムディフューザル**  
 *Three.js で構築した CS2 準拠のルールセット：本格的なエコノミー、購入メニュー、リコイルパターン、壁抜き、ユーティリティ、ボムサイト、そして 4 段階のボット対戦——バックエンド不要の静的サイト。*
@@ -9,7 +9,7 @@
 [![エンジン: Three.js 0.170](https://img.shields.io/badge/エンジン-Three.js%200.170-black.svg?style=flat-square)](https://threejs.org)
 [![ルール: CS2 競技](https://img.shields.io/badge/ルール-CS2%20競技-orange.svg?style=flat-square)](#rules)
 [![ステータス: プレイ可能](https://img.shields.io/badge/ステータス-プレイ可能-success.svg?style=flat-square)](#overview)
-[![プレイ: ライブデモ](https://img.shields.io/badge/プレイ-ライブデモ-success.svg?style=flat-square&logo=githubpages)](https://amfi-disable.github.io/DustIII/)
+[![プレイ: ライブデモ](https://img.shields.io/badge/プレイ-ライブデモ-success.svg?style=flat-square&logo=githubpages)](https://bigbraindevbros.github.io/FaceOff/)
 [![ライセンス: MIT](https://img.shields.io/badge/ライセンス-MIT-blue.svg?style=flat-square)](license)
 [![価格: 100% 無料・オープンソース](https://img.shields.io/badge/価格-100%25%20無料・オープンソース-success.svg?style=flat-square)](#overview)
 [![プライバシー: テレメトリゼロ / 100% ローカル](https://img.shields.io/badge/プライバシー-テレメトリゼロ%20%2F%20100%25%20ローカル-purple.svg?style=flat-square)](#privacy)
@@ -46,7 +46,7 @@
 
 ## 概要とコアバリュー <a id="overview"></a>
 
-DustIII は、名作 de_dust2 の 5v5 ボムディフューザルをブラウザ上で忠実に再現したプロジェクトです。あなたはライフルを手に 4 人のボット仲間とともにポジションを固め、5 人の敵ボットは連携したチームのように購入・ローテーション・実行・リテイクを行います。すべてのラウンドは単一ページ内でローカルにシミュレーションされます——アカウントもマッチメイキングもダウンロードもテレメトリもありません。
+FaceOff は、名作 de_dust2 の 5v5 ボムディフューザルをブラウザ上で忠実に再現したプロジェクトです。あなたはライフルを手に 4 人のボット仲間とともにポジションを固め、5 人の敵ボットは連携したチームのように購入・ローテーション・実行・リテイクを行います。すべてのラウンドは単一ページ内でローカルにシミュレーションされます——アカウントもマッチメイキングもダウンロードもテレメトリもありません。
 
 デスクトップ版 Chrome、Firefox、Safari の WebGL 2 を対象としています。コールドロード時は同一オリジンから静的マップとアートアセットを読み込み、その後は最新の GPU で 60 FPS 以上で試合全体を実行します。
 
@@ -133,8 +133,8 @@ DustIII は、名作 de_dust2 の 5v5 ボムディフューザルをブラウザ
 ### ローカルで起動
 
 ```bash
-git clone https://github.com/AMFI-Disable/DustIII.git
-cd DustIII
+git clone https://github.com/BigBrainDevBros/FaceOff.git
+cd FaceOff
 python3 -m http.server 8000
 ```
 
@@ -154,7 +154,7 @@ python3 -m http.server 8000
 本ゲームはビルド手順を必要としないフラットな ES モジュールアプリケーションです。`index.html` が DOM シェル、HUD スタイル、インポートマップを担当し、`js/` がシミュレーションと描画を担当します。
 
 ```text
-DustIII/
+FaceOff/
 ├── index.html                  # シェル、HUD スタイル、ローディング画面、インポートマップ
 ├── js/
 │   ├── main.js                 # 起動、入力、カメラ、レンダーループ、観戦
@@ -224,4 +224,4 @@ DustIII/
 
 ## ライセンスと利用条件 <a id="license"></a>
 
-[MIT ライセンス](license) の下で提供されています。Copyright (c) 2026 AMFI-Disable.
+[MIT ライセンス](license) の下で提供されています。Copyright (c) 2026 BigBrainDevBros.
