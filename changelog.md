@@ -16,11 +16,15 @@ The format follows Keep a Changelog, and this project uses Semantic Versioning.
 - GitHub Actions Pages workflow publishing the static build at [the live demo](https://amfi-disable.github.io/DustIII/), plus a live-demo badge in every localized readme.
 - Custom domain configuration (`CNAME`) for GitHub Pages pointing to `dustiii.is-cool.dev`.
 - Automated offline quality checks in GitHub Actions CI (`ci.yml`) validating JavaScript syntax, YAML configurations, lowercase filenames, and commit message conventions.
+- Packed game bundle (`assets/pack-00.js`, `assets/pack-01.js`, `assets/pack-02.js`) with in-memory `DecompressionStream` unpacking in `index.html` for `assets/game.js`, GLB weapon and operator models, audio banks, bundled fonts, and five arenas (`depot`, `greybox`, `patio`, `range`, `skyline`).
+- PeerJS/WebRTC networking configuration (`window.FACEOFF_NET`) and bundled `PeerJS` runtime support in the `FACEOFF` build.
 
 ### Changed
 
 - Lowercased marker texture assets to `mark_a.png` and `mark_b.png`, and updated the `js/world.js` references.
 - Modernized GitHub Pages deployment workflow actions to standard versions (`actions/checkout@v6`, `actions/configure-pages@v6`, `actions/upload-pages-artifact@v5`, `actions/deploy-pages@v5`).
+- Replaced the unbundled `js/*.js` ES module files and loose `assets/` subdirectories (`chars/`, `fx/`, `tex/`, `ui/weapons/`, `weapons/`, `world/`) with the packed `FACEOFF` game bundle and `index.html` loader.
+- Expanded the JavaScript syntax validation glob in `.github/workflows/ci.yml` to check `assets/*.js` alongside `js/*.js`.
 
 ### Fixed
 
