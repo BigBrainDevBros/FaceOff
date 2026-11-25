@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes, gameplay systems, and architectural capabilities of DustIII are documented in this file.
+All notable changes, gameplay systems, and architectural capabilities of FaceOff (formerly DustIII) are documented in this file.
 
 The format follows Keep a Changelog, and this project uses Semantic Versioning.
 
@@ -28,6 +28,8 @@ The format follows Keep a Changelog, and this project uses Semantic Versioning.
 - Expanded the JavaScript syntax validation glob in `.github/workflows/ci.yml` to check `assets/*.js` alongside `js/*.js`.
 
 ### Fixed
+
+- Updated all seven player guides and the page description for the current first-to-nine duel, four selectable arenas and online room flow.
 
 - Corrected internal heading anchor links across documentation for table of contents navigation.
 
