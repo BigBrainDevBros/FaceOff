@@ -29,6 +29,14 @@ The format follows Keep a Changelog, and this project uses Semantic Versioning.
 
 ### Fixed
 
+- **Game Modes**: Added Mirror Duel (identical rotating loadouts each round) and Escalation (8-weapon Gun Game 1v1 ending on knife) alongside Classic 1v1 in the Play menu and via `?mode=` URL parameters.
+- **Cross-Round Bot Modeling**: Added rolling per-match player tendency tracking (rush rate, AWP frequency, contact distance) driving dynamic counter-plans across Normal, Hard, and Pro tiers.
+- **Gameplay Flow Shortcuts**: Added one-key buy presets (`F1` Full Buy, `F2` Eco, `F3` Rebuy Last), `Space` skip-buy in solo bot matches, and a compact post-round damage and headshot summary bar.
+- **Visual And Audio Polish**: Added dynamic operator contact shadows, Expose-phase pulsing radar ring VFX, and subtle 104 BPM adaptive in-match tension stems during Expose and Match Point / Overtime.
+- **Interface Language Toggle**: Added an in-page `EN / 中文` switcher persisted in `localStorage`.
+- **Distinct Bot Difficulty Behavior**: Overhauled `easy`, `normal`, `hard`, and `pro` profiles with distinct tactical plans, hold timings, peek styles, AWP bolt-cycle punishes, and Pro Expose ping-reversal jukes.
+- **Loader And Render Performance**: Deferred pack and boot script tags in `index.html`, disabled MSAA when `devicePixelRatio >= 1.5`, pruned unused `assets/models/smg.glb`, and synced `assets/boot.js` `TOTAL` byte count.
+- **Hitbox And AI Fixes**: Closed standing (`1.50` -> `1.54`) and crouched (`1.02` -> `1.06`) neck hitbox gaps, removed AI `enemyWeapon` / `enemyHp` omniscience, fixed projected flash-dodge trajectory and turn-away timing, wired dead `PM` keys (`memory`, `flankChance`, `holdChance`, `peekPatience`), fixed `sight` description (`1.25x` -> `1.35x`), and updated `kr.defaultMap` to `range`.
 - Updated all seven player guides and the page description for the current first-to-nine duel, four selectable arenas and online room flow.
 
 - Corrected internal heading anchor links across documentation for table of contents navigation.

@@ -2,7 +2,7 @@
 // ---- 单文件加载器：解包内嵌资源 → 内存表 → 拦截 fetch / CSS url / 缩略图 → 启动 game.js ----
 (function () {
   'use strict';
-  var T0 = performance.now(), TOTAL = 14749088;
+  var T0 = performance.now(), TOTAL = 14617967;
   var boot = document.getElementById('boot'), bt = document.getElementById('boot-t');
   var pr = document.createElement('div'); pr.className = 'pr'; pr.innerHTML = '<i></i>';
   var pn = document.createElement('div'); pn.className = 'pn';
