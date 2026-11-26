@@ -37,6 +37,7 @@ The format follows Keep a Changelog, and this project uses Semantic Versioning.
 - **Distinct Bot Difficulty Behavior**: Overhauled `easy`, `normal`, `hard`, and `pro` profiles with distinct tactical plans, hold timings, peek styles, AWP bolt-cycle punishes, and Pro Expose ping-reversal jukes.
 - **Loader And Render Performance**: Deferred pack and boot script tags in `index.html`, disabled MSAA when `devicePixelRatio >= 1.5`, pruned unused `assets/models/smg.glb`, and synced `assets/boot.js` `TOTAL` byte count.
 - **Hitbox And AI Fixes**: Closed standing (`1.50` -> `1.54`) and crouched (`1.02` -> `1.06`) neck hitbox gaps, removed AI `enemyWeapon` / `enemyHp` omniscience, fixed projected flash-dodge trajectory and turn-away timing, wired dead `PM` keys (`memory`, `flankChance`, `holdChance`, `peekPatience`), fixed `sight` description (`1.25x` -> `1.35x`), and updated `kr.defaultMap` to `range`.
+- **Tight-Space And Penetration Fixes (#2)**: Added visibility-aware exposed-part and narrow-slit targeting in `H()` so bots never empty magazines into head-glitch cover, fixed `ft()` and `g1()` entry/exit tracking so single penetrable crates (> 0.5m) incur only one penetration penalty, and reduced the post-hit surface-clear step from `0.06m` to `0.004m` so targets flush behind thin cover are never skipped.
 - Updated all seven player guides and the page description for the current first-to-nine duel, four selectable arenas and online room flow.
 
 - Corrected internal heading anchor links across documentation for table of contents navigation.
