@@ -14,7 +14,7 @@
 
 [Play Online](https://bigbraindevbros.github.io/FaceOff/) · [Bilibili Toy](https://www.bilibili.com/toy/faceoff) · [中文说明](readme.zh-cn.md) · [MIT License](license)
 
-[Player Guide](docs/wiki/home.md) · [Contributing](contributing.md)
+[Player Guide](docs/wiki/home.md) · [Contributing](contributing.md) · [Changelog](changelog.md) · [Security Policy](security.md)
 
 </div>
 

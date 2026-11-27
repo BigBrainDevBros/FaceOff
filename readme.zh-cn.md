@@ -14,7 +14,7 @@
 
 [在线游玩](https://bigbraindevbros.github.io/FaceOff/) · [B站 Toy 版](https://www.bilibili.com/toy/faceoff) · [English](readme.md) · [MIT 许可证](license)
 
-[玩家指南](docs/wiki/home.zh-cn.md) · [贡献指南](contributing.zh-cn.md)
+[玩家指南](docs/wiki/home.zh-cn.md) · [贡献指南](contributing.zh-cn.md) · [更新日志](changelog.md) · [安全政策](security.md)
 
 </div>
 
