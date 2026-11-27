@@ -8,6 +8,8 @@ The format follows Keep a Changelog, and this project uses Semantic Versioning.
 
 ## [Unreleased]
 
+- Refactored bot AI (`IT`/`lF`) to remove `1-e` single-target hardcoding, adding dynamic multi-target threat scoring with switch hysteresis and a shared per-team Blackboard for delayed callouts (0.25–0.6s), crossfire node spacing, utility intent de-duplication, and trade-kill responses (#10).
+
 - Added bilingual guides to first matches, arenas, bot difficulty comparisons and collision reports.
 
 - Corrected the play, clone and star history links in both language guides.
