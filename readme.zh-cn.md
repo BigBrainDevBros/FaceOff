@@ -5,14 +5,14 @@
 **在浏览器里直接玩的 1v1 回合制射击游戏**
 *买枪、对枪、拿下回合。CS2 的伤害、护甲和固定弹道，8 把武器，4 张小地图，排位匹配，人机对战和点对点联机。不用安装，没有服务器。*
 
-[![Play: Live](https://img.shields.io/badge/Play-Live%20on%20GitHub%20Pages-success.svg?style=flat-square&logo=githubpages)](https://amfi-disable.github.io/DustIII/)
+[![Play: Live](https://img.shields.io/badge/Play-Live%20on%20GitHub%20Pages-success.svg?style=flat-square&logo=githubpages)](https://bigbraindevbros.github.io/FaceOff/)
 [![Bilibili Toy](https://img.shields.io/badge/Also%20on-Bilibili%20Toy-00A1D6.svg?style=flat-square&logo=bilibili&logoColor=white)](https://www.bilibili.com/toy/faceoff)
 [![Version](https://img.shields.io/badge/Version-V10.1-blue.svg?style=flat-square)](#v10-更新内容)
 [![Engine: Three.js](https://img.shields.io/badge/Engine-Three.js-black.svg?style=flat-square)](https://threejs.org)
 [![Mode: 1v1](https://img.shields.io/badge/Mode-1v1%20Duel-orange.svg?style=flat-square)](#对局规则)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](license)
 
-[在线游玩](https://amfi-disable.github.io/DustIII/) · [B站 Toy 版](https://www.bilibili.com/toy/faceoff) · [English](readme.md) · [MIT 许可证](license)
+[在线游玩](https://bigbraindevbros.github.io/FaceOff/) · [B站 Toy 版](https://www.bilibili.com/toy/faceoff) · [English](readme.md) · [MIT 许可证](license)
 
 [玩家指南](docs/wiki/home.zh-cn.md) · [贡献指南](contributing.zh-cn.md)
 
@@ -20,7 +20,7 @@
 
 > [!NOTE]
 > **官方发布地址，同一作者。** 《对枪 FACEOFF》只在两个地方发布：
-> 本仓库（在线地址 [amfi-disable.github.io/DustIII](https://amfi-disable.github.io/DustIII/)）和
+> 本仓库（在线地址 [bigbraindevbros.github.io/FaceOff](https://bigbraindevbros.github.io/FaceOff/)）和
 > [bilibili.com/toy/faceoff](https://www.bilibili.com/toy/faceoff)。两边出自同一位作者，不存在谁搬运谁。
 > 两个版本的主菜单右下角都有指向对方的链接。
 
@@ -28,11 +28,11 @@
 
 ## Star History
 
-<a href="https://www.star-history.com/?type=date&repos=amfi-disable%2Fdustiii">
+<a href="https://www.star-history.com/?type=date&repos=BigBrainDevBros%2FFaceOff">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=amfi-disable%2Fdustiii&type=date&theme=dark&legend=top-left" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=amfi-disable%2Fdustiii&type=date&legend=top-left" />
-    <img alt="AMFI-Disable/DustIII Star History Chart" src="https://api.star-history.com/chart?repos=amfi-disable%2Fdustiii&type=date&legend=top-left" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=BigBrainDevBros%2FFaceOff&type=date&theme=dark&legend=top-left" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=BigBrainDevBros%2FFaceOff&type=date&legend=top-left" />
+    <img alt="BigBrainDevBros/FaceOff Star History Chart" src="https://api.star-history.com/chart?repos=BigBrainDevBros%2FFaceOff&type=date&legend=top-left" />
   </picture>
 </a>
 
@@ -58,7 +58,7 @@
 
 ## 开始游玩
 
-用电脑浏览器（Chrome、Edge、Firefox 或 Safari）打开 **[amfi-disable.github.io/DustIII](https://amfi-disable.github.io/DustIII/)**，在主菜单选模式：
+用电脑浏览器（Chrome、Edge、Firefox 或 Safari）打开 **[bigbraindevbros.github.io/FaceOff](https://bigbraindevbros.github.io/FaceOff/)**，在主菜单选模式：
 
 | 模式 | 内容 | 算段位分 |
 | :--- | :--- | :--- |
@@ -158,8 +158,8 @@
 在本地试玩：
 
 ```bash
-git clone https://github.com/AMFI-Disable/DustIII.git
-cd DustIII
+git clone https://github.com/BigBrainDevBros/FaceOff.git
+cd FaceOff
 python3 -m http.server 8000
 ```
 

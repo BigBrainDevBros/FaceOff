@@ -5,14 +5,14 @@
 **1v1 round-based shooter that runs in your browser**
 *Buy, duel, win the round. CS2 damage, armor and spray patterns, eight weapons, four compact maps, ranked matchmaking, bots and peer-to-peer online play. No install, no server.*
 
-[![Play: Live](https://img.shields.io/badge/Play-Live%20on%20GitHub%20Pages-success.svg?style=flat-square&logo=githubpages)](https://amfi-disable.github.io/DustIII/)
+[![Play: Live](https://img.shields.io/badge/Play-Live%20on%20GitHub%20Pages-success.svg?style=flat-square&logo=githubpages)](https://bigbraindevbros.github.io/FaceOff/)
 [![Bilibili Toy](https://img.shields.io/badge/Also%20on-Bilibili%20Toy-00A1D6.svg?style=flat-square&logo=bilibili&logoColor=white)](https://www.bilibili.com/toy/faceoff)
 [![Version](https://img.shields.io/badge/Version-V10.1-blue.svg?style=flat-square)](#changes-in-v10)
 [![Engine: Three.js](https://img.shields.io/badge/Engine-Three.js-black.svg?style=flat-square)](https://threejs.org)
 [![Mode: 1v1](https://img.shields.io/badge/Mode-1v1%20Duel-orange.svg?style=flat-square)](#how-a-match-works)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](license)
 
-[Play Online](https://amfi-disable.github.io/DustIII/) · [Bilibili Toy](https://www.bilibili.com/toy/faceoff) · [中文说明](readme.zh-cn.md) · [MIT License](license)
+[Play Online](https://bigbraindevbros.github.io/FaceOff/) · [Bilibili Toy](https://www.bilibili.com/toy/faceoff) · [中文说明](readme.zh-cn.md) · [MIT License](license)
 
 [Player Guide](docs/wiki/home.md) · [Contributing](contributing.md)
 
@@ -20,7 +20,7 @@
 
 > [!NOTE]
 > **Official releases, same creator.** FACEOFF is published in exactly two places:
-> this repository (played at [amfi-disable.github.io/DustIII](https://amfi-disable.github.io/DustIII/)) and
+> this repository (played at [bigbraindevbros.github.io/FaceOff](https://bigbraindevbros.github.io/FaceOff/)) and
 > [bilibili.com/toy/faceoff](https://www.bilibili.com/toy/faceoff). Both are made by the same creator; neither is a copy of the other.
 > The main menu of each version links to the other one.
 
@@ -28,11 +28,11 @@
 
 ## Star History
 
-<a href="https://www.star-history.com/?type=date&repos=amfi-disable%2Fdustiii">
+<a href="https://www.star-history.com/?type=date&repos=BigBrainDevBros%2FFaceOff">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=amfi-disable%2Fdustiii&type=date&theme=dark&legend=top-left" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=amfi-disable%2Fdustiii&type=date&legend=top-left" />
-    <img alt="AMFI-Disable/DustIII Star History Chart" src="https://api.star-history.com/chart?repos=amfi-disable%2Fdustiii&type=date&legend=top-left" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=BigBrainDevBros%2FFaceOff&type=date&theme=dark&legend=top-left" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=BigBrainDevBros%2FFaceOff&type=date&legend=top-left" />
+    <img alt="BigBrainDevBros/FaceOff Star History Chart" src="https://api.star-history.com/chart?repos=BigBrainDevBros%2FFaceOff&type=date&legend=top-left" />
   </picture>
 </a>
 
@@ -58,7 +58,7 @@
 
 ## Play
 
-Open **[amfi-disable.github.io/DustIII](https://amfi-disable.github.io/DustIII/)** in a desktop browser (Chrome, Edge, Firefox or Safari) and pick a mode from the main menu:
+Open **[bigbraindevbros.github.io/FaceOff](https://bigbraindevbros.github.io/FaceOff/)** in a desktop browser (Chrome, Edge, Firefox or Safari) and pick a mode from the main menu:
 
 | Mode | What it is | Rank points |
 | :--- | :--- | :--- |
@@ -158,8 +158,8 @@ The site is a static bundle: `index.html` plus `assets/pack-*.js` and `assets/bo
 To try it locally:
 
 ```bash
-git clone https://github.com/AMFI-Disable/DustIII.git
-cd DustIII
+git clone https://github.com/BigBrainDevBros/FaceOff.git
+cd FaceOff
 python3 -m http.server 8000
 ```
 
