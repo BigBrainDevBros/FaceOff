@@ -8,6 +8,8 @@ The format follows Keep a Changelog, and this project uses Semantic Versioning.
 
 ## [Unreleased]
 
+- Added bilingual guides to first matches, arenas, bot difficulty comparisons and collision reports.
+
 - Corrected the play, clone and star history links in both language guides.
 
 - Added English and Simplified Chinese player guides covering practice, maps and room troubleshooting.

@@ -13,3 +13,5 @@
 一位玩家创建房间，将五位房间码分享给另一位。双方应打开相同版本。无法加入时，可尝试网络诊断或手动交换邀请与应答码。若双方画面不同，请记录发生的回合及各自看到的现象。
 
 [操作与地图列表](../../readme.zh-cn.md) · [贡献指南](../../contributing.zh-cn.md)
+
+[入门指南](getting-started.zh-cn.md) · [电脑难度与碰撞反馈](bot-ai-and-ballistics.zh-cn.md)
