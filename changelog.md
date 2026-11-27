@@ -8,6 +8,8 @@ The format follows Keep a Changelog, and this project uses Semantic Versioning.
 
 ## [Unreleased]
 
+- Added bilingual contributor navigation and updated feedback templates.
+
 ## [10.1.0] - 2026-11-27
 
 ### Added

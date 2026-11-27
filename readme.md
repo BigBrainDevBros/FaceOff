@@ -14,6 +14,8 @@
 
 [Play Online](https://amfi-disable.github.io/DustIII/) · [Bilibili Toy](https://www.bilibili.com/toy/faceoff) · [中文说明](readme.zh-cn.md) · [MIT License](license)
 
+[Contributing](contributing.md)
+
 </div>
 
 > [!NOTE]
