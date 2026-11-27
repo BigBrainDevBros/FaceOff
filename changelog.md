@@ -8,14 +8,16 @@ The format follows Keep a Changelog, and this project uses Semantic Versioning.
 
 ## [Unreleased]
 
+### Changed
+
 - Refactored bot AI (`IT`/`lF`) to remove `1-e` single-target hardcoding, adding dynamic multi-target threat scoring with switch hysteresis and a shared per-team Blackboard for delayed callouts (0.25–0.6s), crossfire node spacing, utility intent de-duplication, and trade-kill responses (#10).
 
+### Documentation
+
+- Added changelog and security policy links to the English and Simplified Chinese README navigation bars.
 - Added bilingual guides to first matches, arenas, bot difficulty comparisons and collision reports.
-
 - Corrected the play, clone and star history links in both language guides.
-
 - Added English and Simplified Chinese player guides covering practice, maps and room troubleshooting.
-
 - Added bilingual contributor navigation and updated feedback templates.
 
 ## [10.1.0] - 2026-11-27
