@@ -8,6 +8,10 @@ The format follows Keep a Changelog, and this project uses Semantic Versioning.
 
 ## [Unreleased]
 
+### Added
+
+- Added reproducible asset unpack/pack/verify CLI (`tools/pack.py`) with SHA-256 manifest generation, deterministic chunked packaging, automatic `assets/boot.js` (`TOTAL`) and `index.html` script synchronization, and GitHub Actions CI verification (#16).
+
 ### Changed
 
 - Refactored bot AI (`IT`/`lF`) to remove `1-e` single-target hardcoding, adding dynamic multi-target threat scoring with switch hysteresis and a shared per-team Blackboard for delayed callouts (0.25–0.6s), crossfire node spacing, utility intent de-duplication, and trade-kill responses (#10).

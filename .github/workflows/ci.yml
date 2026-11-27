@@ -55,6 +55,12 @@ jobs:
           test -f index.html
           echo "index.html entrypoint verified."
 
+      - name: Validate Asset Packs & Boot Sync
+        run: |
+          python3 -m py_compile tools/pack.py
+          python3 tools/pack.py verify --check-roundtrip
+          echo "Asset packs, boot.js sync, and deterministic packaging verified."
+
       - name: Verify Commit Message Conventions
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
