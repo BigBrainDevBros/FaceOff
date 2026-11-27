@@ -8,6 +8,34 @@ The format follows Keep a Changelog, and this project uses Semantic Versioning.
 
 ## [Unreleased]
 
+## [10.1.0] - 2026-11-27
+
+### Added
+
+- Ranked page with serverless matchmaking (PeerJS lobby: the first player online coordinates, others take over when they leave), live online / searching / in-match counts, and ranked bots whose difficulty follows the player's rank (V9).
+- Account and rank system: tiers Rookie to Legend, placement matches, rank page, save codes, Bilibili Toy profile support (V8).
+- Quick-buy keys (`F1` full buy, `F2` eco, `F3` rebuy last round) routed through the normal buy command so they also work for online guests, plus `F4` to skip the buy phase in bot matches. Rebuilt from the community `foEnhance` prototype inside the source modules.
+- Round damage summary (damage dealt, damage taken, headshot rate), expose-phase edge pulse and ring, match-point / overtime tension beat (toggle in Settings → Audio), and contact shadows under players.
+- Author credit links between the GitHub Pages and Bilibili Toy builds.
+
+### Changed
+
+- Gunplay follows CS2: damage, armor penetration, ×4 headshots, range falloff, armor points that wear down, Kevlar $650 / Kevlar + Helmet $1000, fixed spray patterns with recoil decay, 45% view-punch tracking, run-and-gun inaccuracy, CS2 prices, fire rates, magazines, movement speeds and economy ($800 start, $16000 cap, $3250 round win, $1400–$3400 loss bonus).
+- Only Ranked matches change rank points; Practice (bots) and Rooms (friends) only record stats.
+- Network protocol version bumped to 5; players must run the same build to play together.
+- README rewritten for FaceOff in English and Simplified Chinese.
+
+### Fixed
+
+- Ported the community fixes from the packed bundle into source: neck hitbox gap (standing body top 1.54, head 1.68; crouched 1.07 / 1.20), single-penetration counting through thick or stacked crates using entry / exit face detection, 0.004 m post-hit step, 5-ray grenade bounce collision, validated navigation links on `depot` and `patio`, bot fixes (no knowledge of the opponent's weapon or health, aim at visible body parts, shoot into smoke, flash-dodge using the real grenade trajectory, cross-round opponent modeling, wired `memory` / `flankChance` / `holdChance` / `peekPatience`), MSAA disabled at `devicePixelRatio >= 1.5`, and the sight description (1.35x).
+- Bots no longer get stuck jumping in place: progress checks ignore vertical movement.
+
+### Removed
+
+- Localized READMEs other than English and Simplified Chinese.
+
+## [8.1.0] - 2026-11-26
+
 ### Added
 
 - Standardized repository scaffolding: `readme.md`, `changelog.md`, `license`, `security.md`, and GitHub issue and pull request templates.
