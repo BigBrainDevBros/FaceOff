@@ -18,6 +18,7 @@ The format follows Keep a Changelog, and this project uses Semantic Versioning.
 
 ### Changed
 
+- Optimized startup loading, decoding, memory usage, and GLB model sizes: added `defer` to pack/boot scripts in `index.html`, upgraded `assets/boot.js` to use native `Uint8Array.fromBase64` with 6-way parallel decompression and lazy Blob URL allocation (41 -> 9), pruned unused `assets/models/smg.glb`, and optimized all 20 GLB assets (`WEIGHTS_0` U8 normalized, `NORMAL` I8 quantized via `KHR_mesh_quantization`, exact vertex welding, and animation keyframe pruning), cutting unpack time from 102.6 ms to 44.2 ms (-56.9%), raw assets by 17.9% (-2.67 MB), and packed bundle size by 10.3% (-945 KB) (#17).
 - Refactored bot AI (`IT`/`lF`) to remove `1-e` single-target hardcoding, adding dynamic multi-target threat scoring with switch hysteresis and a shared per-team Blackboard for delayed callouts (0.25–0.6s), crossfire node spacing, utility intent de-duplication, and trade-kill responses (#10).
 
 ### Documentation

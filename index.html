@@ -31,16 +31,16 @@
 <div id="boot"><div class="mk"><i></i><i></i></div><div id="boot-t">正在载入</div><div class="ln"><i></i></div></div>
 <script>/* 界面语言：?lang=en|zh 或设置里存的 lang（详见 src/client/i18n.js）。载入页只有这一行字，在这里直接换 */
 (function () { try { var q = new URLSearchParams(location.search).get('lang'), s = JSON.parse(localStorage.getItem('faceoff.settings.v1') || '{}').lang, l = q === 'en' || q === 'zh' ? q : s; if (l === 'en') { document.documentElement.lang = 'en'; document.documentElement.className += ' lang-en'; document.title = 'FACEOFF'; document.getElementById('boot-t').textContent = 'LOADING'; } } catch (e) { /* ignore */ } })();</script>
-<script src="assets/pack-00.js"></script>
-<script src="assets/pack-01.js"></script>
-<script src="assets/pack-02.js"></script>
+<script defer src="assets/pack-00.js"></script>
+<script defer src="assets/pack-01.js"></script>
+<script defer src="assets/pack-02.js"></script>
 <style>
 #boot .pr{position:relative;width:180px;height:3px;background:rgba(15,15,18,.15);margin-top:-14px}
 #boot .pr i{position:absolute;inset:0;background:#B5412F;transform:scaleX(0);transform-origin:0 0;transition:transform 120ms linear}
 #boot .pn{font:700 11px/1 ui-monospace,Menlo,monospace;letter-spacing:.3em;color:#7C776E;margin-top:-10px;font-variant-numeric:tabular-nums}
 #boot.err #boot-t{color:#B5412F;letter-spacing:.08em;text-indent:0;max-width:640px;text-align:center;line-height:1.6}
 </style>
-<script src="assets/boot.js"></script>
+<script defer src="assets/boot.js"></script>
 </body>
 </html>
 
