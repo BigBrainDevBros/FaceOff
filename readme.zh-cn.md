@@ -14,7 +14,7 @@
 
 [在线游玩](https://amfi-disable.github.io/DustIII/) · [B站 Toy 版](https://www.bilibili.com/toy/faceoff) · [English](readme.md) · [MIT 许可证](license)
 
-[贡献指南](contributing.zh-cn.md)
+[玩家指南](docs/wiki/home.zh-cn.md) · [贡献指南](contributing.zh-cn.md)
 
 </div>
 
