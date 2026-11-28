@@ -16,6 +16,8 @@ The format follows Keep a Changelog, and this project uses Semantic Versioning.
 
 ### Fixed
 
+- Preserved and enforced the `defer` attribute on `assets/pack-NN.js` script tags in `tools/pack.py` (`sync_index_packs` and `verify`).
+- Guarded bot AI buy planning (`lF`) in Mirror and Escalation modes, fixed Escalation Tier 8 (`knife`) bot weapon-slot selection, fixed the buy-key (`B`) toast in non-classic modes, added a Classic / Mirror / Escalation mode selector to the Solo Practice Lobby, and added English i18n translations for all mode UI and buy-disabled messages.
 - Synchronized Classic, Mirror, and Escalation modes across multiplayer rooms so the host authoritatively controls the game mode (overriding guest local settings), with consistent weapons, armor, buy-rule enforcement, and round/tier progression across both players (#15).
 
 ### Changed

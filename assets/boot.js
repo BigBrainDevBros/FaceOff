@@ -1,7 +1,7 @@
 // ---- 单文件加载器：并行解包内嵌资源 → 内存表 → 按需生成 blob URL → 启动 game.js ----
 (function () {
   'use strict';
-  var T0 = performance.now(), TOTAL = 12232734;
+  var T0 = performance.now(), TOTAL = 12234100;
   var boot = document.getElementById('boot'), bt = document.getElementById('boot-t');
   var pr = document.createElement('div'); pr.className = 'pr'; pr.innerHTML = '<i></i>';
   var pn = document.createElement('div'); pn.className = 'pn';
