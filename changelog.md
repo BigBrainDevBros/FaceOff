@@ -8,8 +8,6 @@ The format follows Keep a Changelog, and this project uses Semantic Versioning.
 
 ## [Unreleased]
 
-- Documented Classic, Mirror and Escalation rules in the bilingual controls and maps guide.
-
 ### Added
 
 - Added reproducible asset unpack/pack/verify CLI (`tools/pack.py`) with SHA-256 manifest generation, deterministic chunked packaging, automatic `assets/boot.js` (`TOTAL`) and `index.html` script synchronization, and GitHub Actions CI verification (#16).
@@ -27,6 +25,7 @@ The format follows Keep a Changelog, and this project uses Semantic Versioning.
 
 ### Documentation
 
+- Documented Classic, Mirror and Escalation rules in the bilingual controls and maps guide.
 - Added changelog and security policy links to the English and Simplified Chinese README navigation bars.
 - Added bilingual guides to first matches, arenas, bot difficulty comparisons and collision reports.
 - Corrected the play, clone and star history links in both language guides.
