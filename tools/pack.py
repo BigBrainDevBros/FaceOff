@@ -160,11 +160,12 @@ def sync_index_packs(index_path: Path, pack_names: list[str]) -> bool:
         raise ValueError(f"Could not locate pack script tags in {index_path}")
     existing = [m.group(1) for m in matches]
     target = [f"assets/{name}" for name in pack_names]
-    if existing == target:
+    all_deferred = all("defer" in m.group(0) for m in matches)
+    if existing == target and all_deferred:
         return False
     block_start = matches[0].start()
     block_end = matches[-1].end()
-    replacement = "\n".join(f'<script src="{src}"></script>' for src in target)
+    replacement = "\n".join(f'<script defer src="{src}"></script>' for src in target)
     updated = text[:block_start] + replacement + text[block_end:]
     index_path.write_text(updated, encoding="utf-8")
     return True
@@ -173,6 +174,12 @@ def sync_index_packs(index_path: Path, pack_names: list[str]) -> bool:
 def read_index_packs(index_path: Path) -> list[str]:
     text = index_path.read_text(encoding="utf-8")
     return PACK_SCRIPT_RE.findall(text)
+
+
+def read_index_packs_deferred(index_path: Path) -> bool:
+    text = index_path.read_text(encoding="utf-8")
+    matches = list(PACK_SCRIPT_RE.finditer(text))
+    return bool(matches) and all("defer" in m.group(0) for m in matches)
 
 
 def encode_asset(rel_path: str, data: bytes) -> list:
@@ -378,13 +385,17 @@ def cmd_verify(args: argparse.Namespace) -> int:
             f"packs sum to {total_raw}"
         )
 
-    # 4. Verify index.html script tags match pack files on disk.
+    # 4. Verify index.html script tags match pack files on disk and retain defer.
     disk_packs = [f"assets/{p.name}" for p in pack_files]
     html_packs = read_index_packs(index_path)
     if html_packs != disk_packs:
         raise ValueError(
             f"index.html pack scripts mismatch: index.html has {html_packs}, "
             f"disk has {disk_packs}"
+        )
+    if not read_index_packs_deferred(index_path):
+        raise ValueError(
+            "index.html pack script tags must include the defer attribute"
         )
 
     # 5. Optional Node.js syntax check on unpacked assets/game.js.
