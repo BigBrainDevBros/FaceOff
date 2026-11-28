@@ -15,3 +15,5 @@
 [操作与地图列表](../../readme.zh-cn.md) · [贡献指南](../../contributing.zh-cn.md)
 
 [入门指南](getting-started.zh-cn.md) · [电脑难度与碰撞反馈](bot-ai-and-ballistics.zh-cn.md)
+
+[操作与地图](controls-and-maps.zh-cn.md) · [版本记录](../../changelog.md)

@@ -8,6 +8,8 @@ The format follows Keep a Changelog, and this project uses Semantic Versioning.
 
 ## [Unreleased]
 
+- Documented Classic, Mirror and Escalation rules in the bilingual controls and maps guide.
+
 ### Added
 
 - Added reproducible asset unpack/pack/verify CLI (`tools/pack.py`) with SHA-256 manifest generation, deterministic chunked packaging, automatic `assets/boot.js` (`TOTAL`) and `index.html` script synchronization, and GitHub Actions CI verification (#16).

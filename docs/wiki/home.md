@@ -15,3 +15,5 @@ One player hosts a room and shares its five-character code. Both players should 
 [Controls And Arena List](../../readme.md) · [Contributor Guide](../../contributing.md)
 
 [Getting Started](getting-started.md) · [Bot Difficulty And Collision Reports](bot-ai-and-ballistics.md)
+
+[Controls And Maps](controls-and-maps.md) · [Release History](../../changelog.md)
